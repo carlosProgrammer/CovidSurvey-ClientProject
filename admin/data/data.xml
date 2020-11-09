@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<chartdata>
+<col>
+<source/>
+<ssl/>
+<servername/>
+<username/>
+<password/>
+<dbname/>
+<dbconnected/>
+
+
+<xmodel/>
+<xsort/>
+<ymodel/>
+<ysort/>
+
+
+<title> Chart</title><orientation/><dropdown/><legposition/><name/><xaxistitle/><yaxistitle/><height/><width/><showgrid/><showline/>
+<rdbms/>
+<file/>
+<xaxis/><yaxis/><sql/><size/><maptype/><text/><tracename/><yntitle/><color/><type/></col>
+<col><source>ADatabase</source><rdbms>mysql</rdbms><servername>localhost</servername><ssl/><username>cprogrammr</username><password>K4m1s4m4$.</password><dbname>survey_db</dbname><dbconnected>1</dbconnected><file/><title>Age Groups</title><name>1</name><xaxistitle/><yaxistitle/><height/><width/><showgrid>true</showgrid><showline>true</showline><orientation>v</orientation><dropdown>false</dropdown><legposition/><xaxis>SQL1:{col}age{/col}{data}select age, COUNT(age) from answers group by age{/data}</xaxis><yaxis>SQL1:{col}COUNT(age){/col}{data}select age, COUNT(age) from answers group by age{/data}</yaxis><xmodel/><xsort/><ymodel/><ysort/><sql>select age, COUNT(age) from answers group by age </sql><size/><maptype/><text/><tracename>Age groups</tracename><yntitle/><color/><type>bar</type></col><col><source>ADatabase</source><rdbms>mysql</rdbms><servername>localhost</servername><ssl/><username>cprogrammr</username><password>K4m1s4m4$.</password><dbname>survey_db</dbname><dbconnected>1</dbconnected><file/><title>Tests</title><name>2</name><xaxistitle>Answers</xaxistitle><yaxistitle>Qty</yaxistitle><height/><width/><showgrid>true</showgrid><showline>true</showline><orientation>v</orientation><dropdown>false</dropdown><legposition/><xaxis>SQL1:{col}test{/col}{data}select test, COUNT(test) from answers where test != ^Select an option^ group by test{/data}</xaxis><yaxis>SQL1:{col}count(test){/col}{data}select test, count(test) from answers where test != ^Select an option^ group by test{/data}</yaxis><xmodel/><xsort/><ymodel/><ysort/><sql>select test, COUNT(test) from answers where test != 'Select an option' group by test </sql><size/><maptype/><text/><tracename/><yntitle/><color>#FF381A</color><type>bar</type></col></chartdata>
